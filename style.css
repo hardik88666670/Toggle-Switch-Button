@@ -1,0 +1,106 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+}
+ html,body{
+        width: 100%;
+        height: 100%;
+}
+body{
+        font-family:'Courier New', Courier, monospace;
+}
+.hero{
+        background-color: #1d2026;
+        min-height: 100vh;
+        width: 100%;
+        color: white;
+        position: relative;
+}
+nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 8%;
+}
+.left{
+        display: flex;
+        align-items: center;
+}
+.left .menu-img{
+        width: 25px;
+        margin-right: 20px;
+        cursor: pointer;
+}
+.left .logo{
+        width: 160px;
+        cursor: pointer;
+}
+nav ul{
+        display: flex;
+        gap: 20px;
+}
+nav ul li a{
+        font-size: 1.2rem; 
+}
+button{
+        background-color: #efefef;
+        height: 30px;
+        width: 60px;
+        border-radius:20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: background-color .3s ;
+}
+button span{
+        display: block;
+        background-color: #999;
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        margin-left: 2px;
+        transition: background-color 0.3s,margin-left 0.6s;
+}
+.lamp_container{
+        position: absolute;
+        top: -20px;
+        left: 22%;
+        width: 200px;
+}
+.lamp{
+        width: 100%;
+}
+.light{
+        position: absolute;
+        top: 97%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 700px;
+        margin-left: -10px;
+        opacity: 0;
+        transition: opacity 0.8 s;
+}
+.right{
+        margin-top: 100px;
+        margin-left: 650px;
+        color: #00986f;
+        font-size: 30px;
+}
+
+
+
+
+
+.active{
+        background-color: #00986f;
+}
+.active span{
+        background-color: #fff;
+        margin-left: 31px  ;
+}
+.on{
+        opacity: 1;
+}
+
